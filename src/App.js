@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Header from "./Compunent/Header";
+import Data from "./FoodData";
+import ItemBox from "./Compunent/ItemBox";
 
-function App() {
+let list = [
+  "All",
+  ...new Set(
+    Data.map((elem) => {
+      return elem.type;
+    })
+  ),
+];
+console.log(list);
+const App = () => {
+  const [showData, setshowData] = useState(Data);
+  const [navList, setnavList] = useState(list);
+  function filterItem(cate) {
+    if (cate === "All") {
+      setshowData(Data);
+    } else {
+      let newData = Data.filter((elem) => {
+        return elem.type === cate;
+      });
+      setshowData(newData);
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header filterItem={filterItem} navList={navList} />
+      <div className="main_box">
+        {showData.map((elem, index) => {
+          return <ItemBox elem={elem} key={index} />;
+        })}
+      </div>
+    </>
   );
-}
+};
 
 export default App;

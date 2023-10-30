@@ -1,38 +1,78 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+.heading {
   text-align: center;
+  padding: 15px 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 10px;
+}
+.navbar .navItem {
+  padding: 8px 15px;
+  text-decoration: none;
+
+  background-color: rgb(255, 81, 0);
+}
+.navbar .navItem li {
   color: white;
+  font-weight: 500;
+  list-style: none;
 }
-
-.App-link {
-  color: #61dafb;
+.main_box {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box {
+  width: calc(33.3% - 10px);
+  height: 130px;
+  margin: 10px 3px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box img {
+  height: 100%;
+  width: 40%;
+}
+.box .info {
+  padding: 0 15px;
+}
+.box .info p {
+  margin: 3px 0;
+  width: 100%;
+}
+.info .p_name {
+  color: #ff5100;
+}
+.box .price_row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 5px; */
+}
+.price_row button {
+  font-weight: 400;
+  width: 100px;
+  background-color: #ff5100;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.box .price_row .price {
+  color: #ff5100;
+}
+.type {
+  text-transform: initial;
+  font-weight: 300;
+  font-size: 15px;
 }
