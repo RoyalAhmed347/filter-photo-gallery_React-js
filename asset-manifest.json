@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/filter-photo-gallery_React-js/static/css/main.aaedadd5.css",
+    "main.js": "/filter-photo-gallery_React-js/static/js/main.ff7b8b4b.js",
+    "static/js/787.6136f65e.chunk.js": "/filter-photo-gallery_React-js/static/js/787.6136f65e.chunk.js",
+    "static/media/several-dishes-recognition.jpg": "/filter-photo-gallery_React-js/static/media/several-dishes-recognition.eb8d1aa96c67e7e077ed.jpg",
+    "index.html": "/filter-photo-gallery_React-js/index.html",
+    "main.aaedadd5.css.map": "/filter-photo-gallery_React-js/static/css/main.aaedadd5.css.map",
+    "main.ff7b8b4b.js.map": "/filter-photo-gallery_React-js/static/js/main.ff7b8b4b.js.map",
+    "787.6136f65e.chunk.js.map": "/filter-photo-gallery_React-js/static/js/787.6136f65e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aaedadd5.css",
+    "static/js/main.ff7b8b4b.js"
+  ]
+}
